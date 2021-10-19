@@ -1,0 +1,32 @@
+.file-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 1.5vw 0 1.5vw 0;
+}
+.container{
+  padding: 2vw;
+  border: 1px solid #cecece;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.download{
+
+}
+.card{
+  min-width: 30vw;
+  max-width: 45vw;
+  margin-bottom: 1vw;
+}
+
+form{
+  padding: 2vw;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  max-height: 15vw;
+  position: sticky;
+  top: 2vw;
+  max-width: 40vw;
+}
