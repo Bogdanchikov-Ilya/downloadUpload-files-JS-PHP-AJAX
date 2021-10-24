@@ -2,9 +2,15 @@
 let siteUrl = window.location.origin;
 // Получение списка файлов
 async function getDownloads() {
-  const res = await fetch(`${siteUrl}/api/downloads/`, {
-    method: 'GET'
-  })
+  const res = fetch(`${siteUrl}/api/downloads/`)
+    .then((res) => {
+      document.querySelector('.loader__wrapper').style.display = 'block'
+      return res.json()
+    })
+    .then((json) => {
+      document.querySelector('.loader__wrapper').style.display = 'none'
+      return this.array = json
+    })
   let result = await res.json();
   console.log(result)
   result.forEach((item) => {
